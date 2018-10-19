@@ -5,9 +5,6 @@
     <meta charset="utf-8">
     <title>Smarthome</title>
     <link rel="shortcut icon" href="favicon.ico">
-    <script src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
-    <script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
-    <script src="https://unpkg.com/babel-standalone@6.26.0/babel.js"></script>
     <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -173,22 +170,13 @@
                                     <div class="panel__title">Включить свет в корридоре</div>
                                 </div>
                             </div>
+                            <div class="panel scenarios__panel">
+                                <div class="panel__icon panel__icon_clock"></div>
+                                <div class="panel__text">
+                                    <div class="panel__title">Я ухожу</div>
+                                </div>
+                            </div>
                         </div>
-                        <script type="text/babel">
-                        class App extends React.Component {
-                            render() {
-                                return (
-                                    <div class="panel scenarios__panel">
-                                        <div class="panel__icon panel__icon_clock"></div>
-                                        <div class="panel__text">
-                                            <div class="panel__title">Я ухожу</div>
-                                        </div>
-                                    </div>
-                                );
-                            }
-                        }
-                        ReactDOM.render(<App />, document.getElementsByClassName('scenarios__page')[1]);
-                    </script>
                     </section>
                 </div>
                 <div class="content__item content__item_devices">
