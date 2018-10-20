@@ -1,0 +1,23 @@
+{
+  "name": "shri2018-2-performance",
+  "version": "1.0.0",
+  "description": "Оптимизируйте страницу, выложите на GitHub Pages. Зайдите на https://shri-performance.ru и отправьте урл своей страницы.",
+  "main": "scripts.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/teleginzhenya/shri2018-2-performance.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/teleginzhenya/shri2018-2-performance/issues"
+  },
+  "homepage": "https://github.com/teleginzhenya/shri2018-2-performance#readme",
+  "devDependencies": {
+    "webpack": "^4.21.0"
+  }
+}
