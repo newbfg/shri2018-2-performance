@@ -6,18 +6,18 @@ const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 
 module.exports = merge.smart(
   common,
-  {
-    optimization: {
-      minimizer: [
-        new UglifyJsPlugin({
-          cache: true,
-          parallel: true
-        }),
-        new OptimizeCSSAssetsPlugin({})
-      ]
-    },
-    mode: 'production'
-  },
+  // {
+  //   optimization: {
+  //     minimizer: [
+  //       new UglifyJsPlugin({
+  //         cache: true,
+  //         parallel: true
+  //       }),
+  //       new OptimizeCSSAssetsPlugin({})
+  //     ]
+  //   },
+  //   mode: 'production'
+  // },
   {
     output: {
       path: path.resolve(__dirname, 'dist'),
