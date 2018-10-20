@@ -1,3 +1,5 @@
+import './styles.css';
+
 !function(t) {
     var e = window["pcodeJsonp6187"];
     window["pcodeJsonp6187"] = function(i, o, r) {
