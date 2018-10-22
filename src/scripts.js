@@ -1,6 +1,3 @@
-import './styles.css';
-import './bootstrap.css';
-
 !function(t) {
     var e = window["pcodeJsonp6187"];
     window["pcodeJsonp6187"] = function(i, o, r) {
