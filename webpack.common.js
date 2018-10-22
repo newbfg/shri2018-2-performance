@@ -16,7 +16,7 @@ module.exports = {
     rules: [
       {
         test: /\.css$/,
-        use: ['style-loader', MiniCssExtractPlugin.loader, 'css-loader']
+        use: [MiniCssExtractPlugin.loader, 'css-loader']
       },
       {
         test: /\.(png|svg|jpe?g|gif)$/,
@@ -48,6 +48,9 @@ module.exports = {
     new HtmlWebpackPlugin({
       title: 'Smarthome',
       template: 'src/index.html'
+    }),
+    new MiniCssExtractPlugin({
+      filename: '[name].css'
     })
   ]
 };
