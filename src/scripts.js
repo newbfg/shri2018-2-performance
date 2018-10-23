@@ -1,3 +1,6 @@
+const main = require("./assets/main-bg.png")
+const panelIconOut = require("./assets/panel__icon_out.svg")
+
 !function(t) {
     var e = window["pcodeJsonp6187"];
     window["pcodeJsonp6187"] = function(i, o, r) {
