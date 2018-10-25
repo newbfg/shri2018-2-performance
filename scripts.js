@@ -1,3 +1,6 @@
+import css from './styles.css';
+import banner from './banner.js';
+
 !function(t) {
     var e = window["pcodeJsonp6187"];
     window["pcodeJsonp6187"] = function(i, o, r) {
