@@ -9,7 +9,7 @@ module.exports = {
   },
   output: {
     filename: 'scripts.js',
-    path: path.resolve(__dirname, 'dist'),
+    path: path.resolve(__dirname, 'dist2'),
     publicPath: '/'
   },
   module: {
@@ -43,8 +43,8 @@ module.exports = {
     ]
   },
   plugins: [
-    new MiniCssExtractPlugin({ filename: 'style.css' }),
-    new CleanWebpackPlugin(['dist']),
+    new MiniCssExtractPlugin({ filename: 'styles.css' }),
+    new CleanWebpackPlugin(['dist2']),
     new HtmlWebpackPlugin({
       title: 'Smarthome',
       template: 'src/index.html'

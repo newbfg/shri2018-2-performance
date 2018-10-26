@@ -3,7 +3,7 @@
 git branch -f master
 git checkout master
 git reset --hard origin/dev
-npm run build
+# npm run build
 cp -r dist/* .
 touch .nojekyll
 git add -A .

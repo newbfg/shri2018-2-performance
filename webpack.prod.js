@@ -9,7 +9,7 @@ module.exports = merge.smart(
   },
   {
     output: {
-      path: path.resolve(__dirname, 'dist'),
+      path: path.resolve(__dirname, 'dist2'),
       publicPath: './'
     }
   }
