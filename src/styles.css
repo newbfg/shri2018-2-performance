@@ -1,3 +1,145 @@
+@font-face {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: bold;
+  src: local('PT Sans Bold'), url('./fonts/PTS75F_W.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'PT Sans Narrow';
+  font-weight: bold;
+  src: local('PT Sans Narrow Bold'), url('./fonts/PTN77F_W.woff') format('woff');
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section {
+  display: block;
+}
+
+html {
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+img {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+}
+
+button,
+input,
+select,
+textarea {
+  margin: 0;
+  font-size: 100%;
+  vertical-align: middle;
+}
+
+button,
+input {
+  *overflow: visible;
+  line-height: normal;
+}
+
+button,
+html input[type='button'],
+input[type='reset'],
+input[type='submit'] {
+  cursor: pointer;
+  -webkit-appearance: button;
+}
+
+label,
+select,
+button,
+input[type='button'],
+input[type='reset'],
+input[type='submit'],
+input[type='radio'],
+input[type='checkbox'] {
+  cursor: pointer;
+}
+
+body {
+  margin: 0;
+  font-family: 'PT Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  line-height: 20px;
+  color: #222222;
+  background-color: #ffffff;
+}
+
+a {
+  color: #2c3e50;
+  text-decoration: none;
+}
+
+li {
+  line-height: 20px;
+}
+
+label,
+input,
+button,
+select,
+textarea {
+  font-size: 15px;
+  font-weight: normal;
+  line-height: 20px;
+}
+
+input,
+button,
+select,
+textarea {
+  font-family: 'PT Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input,
+textarea,
+.uneditable-input {
+  width: 206px;
+}
+
+input[type='radio'],
+input[type='checkbox'] {
+  margin: 4px 0 0;
+  margin-top: 1px \9;
+  *margin-top: 0;
+  line-height: normal;
+}
+
+input[type='file'],
+input[type='image'],
+input[type='submit'],
+input[type='reset'],
+input[type='button'],
+input[type='radio'],
+input[type='checkbox'] {
+  width: auto;
+}
+
+.main__greeting {
+  font-family: 'PT Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
 .adjust-bar {
   -webkit-appearance: none;
   appearance: none;
@@ -20,19 +162,6 @@
   border: 3px solid rgba(51, 51, 51, 0.1);
   border-radius: 30px;
   box-shadow: 0 0 0 4px #fff;
-}
-.adjust-bar::-moz-range-thumb {
-  box-sizing: border-box;
-  cursor: pointer;
-  width: 60px;
-  height: 60px;
-  border: 3px solid rgba(51, 51, 51, 0.1);
-  border-radius: 30px;
-  background: transparent;
-  box-shadow: 0 0 0 4px #fff;
-}
-.adjust-bar::-moz-range-track {
-  background: transparent;
 }
 .adjust-bar__container_theme_temp {
   position: relative;
@@ -314,7 +443,7 @@
   width: 108px;
   height: 27px;
   position: relative;
-  background-image: url('assets/logo.png');
+  background-image: url('./assets/logo.png');
   background-repeat: no-repeat;
   background-position: left top;
   background-size: cover;
@@ -351,7 +480,6 @@
   margin-top: 6px;
   font-size: 27px;
   font-weight: 700;
-  font-family: 'PT Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 .main__info {
   width: 61.585%;
@@ -471,12 +599,6 @@
   justify-content: space-between;
   flex-wrap: wrap;
 }
-@keyframes modal {
-  from {
-    transform: scale(0.2);
-  }
-  to-transform: scale(1);
-}
 * {
   box-sizing: border-box;
 }
@@ -508,9 +630,6 @@ html {
 }
 .paginator div {
   width: 16px;
-}
-.paginator_hide {
-  display: none;
 }
 .paginator__arrow {
   opacity: 1;
@@ -551,9 +670,6 @@ html {
 .panel_first {
   margin-top: 20px;
 }
-.panel_last {
-  margin-bottom: 20px;
-}
 .panel__sub {
   font-size: 12px;
   color: #858585;
@@ -582,9 +698,6 @@ html {
   position: absolute;
   top: 0;
   right: 40px;
-}
-.scenarios_hide {
-  display: none;
 }
 .weather {
   display: flex;
