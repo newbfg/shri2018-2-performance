@@ -1,7 +1,13 @@
 const path = require('path');
+const glob = require('glob');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const PurgecssPlugin = require('purgecss-webpack-plugin');
+
+const PATHS = {
+  src: path.join(__dirname, 'src')
+};
 
 module.exports = {
   entry: {
@@ -16,7 +22,10 @@ module.exports = {
     rules: [
       {
         test: /\.css$/,
-        use: [MiniCssExtractPlugin.loader, 'css-loader']
+        use: [
+          MiniCssExtractPlugin.loader,
+          { loader: 'css-loader', options: { url: false } }
+        ]
       },
       {
         test: /\.(png|svg|jpe?g|gif)$/,
@@ -46,11 +55,16 @@ module.exports = {
     ]
   },
   plugins: [
-    new MiniCssExtractPlugin({ filename: 'styles.css' }),
     new CleanWebpackPlugin(['dist2']),
     new HtmlWebpackPlugin({
       title: 'Smarthome',
       template: 'src/index.html'
+    }),
+    new MiniCssExtractPlugin({
+      filename: '[name].css'
+    }),
+    new PurgecssPlugin({
+      paths: glob.sync(`${PATHS.src}/**/*`, { nodir: true })
     })
   ]
 };
