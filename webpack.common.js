@@ -22,13 +22,10 @@ module.exports = {
     rules: [
       {
         test: /\.css$/,
-        use: [
-          MiniCssExtractPlugin.loader,
-          { loader: 'css-loader', options: { url: false } }
-        ]
+        use: [MiniCssExtractPlugin.loader, { loader: 'css-loader' }]
       },
       {
-        test: /\.(png|svg|jpe?g|gif)$/,
+        test: /\.(png|svg|jpe?g|gif|webp)$/,
         use: [
           {
             loader: 'file-loader',
@@ -37,7 +34,12 @@ module.exports = {
             }
           },
           {
-            loader: 'image-webpack-loader'
+            loader: 'image-webpack-loader',
+            options: {
+              webp: {
+                quality: 75
+              }
+            }
           }
         ]
       },
@@ -61,10 +63,7 @@ module.exports = {
       template: 'src/index.html'
     }),
     new MiniCssExtractPlugin({
-      filename: '[name].css'
-    }),
-    new PurgecssPlugin({
-      paths: glob.sync(`${PATHS.src}/**/*`, { nodir: true })
+      filename: 'styles.css'
     })
   ]
 };

@@ -199,16 +199,16 @@ input[type='checkbox'] {
   left: 14px;
   width: 30px;
   height: 30px;
-  background: url('data:image/svg+xml;utf8,<svg width="24" height="24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M-1140-250H226v768h-1366z"/><path d="M0 0h24v24H0z"/><g transform="translate(1 1)" stroke-linecap="round" stroke-linejoin="round" stroke="#fff"><circle cx="11" cy="11" r="5"/><path d="M11 0v2m0 18v2M3.22 3.22l1.42 1.42m12.72 12.72l1.42 1.42M0 11h2m18 0h2M3.22 18.78l1.42-1.42M17.36 4.64l1.42-1.42"/></g></g></svg>') center center/contain
-    no-repeat;
+  background: url('data:image/svg+xml;utf8,<svg width="24" height="24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M-1140-250H226v768h-1366z"/><path d="M0 0h24v24H0z"/><g transform="translate(1 1)" stroke-linecap="round" stroke-linejoin="round" stroke="#fff"><circle cx="11" cy="11" r="5"/><path d="M11 0v2m0 18v2M3.22 3.22l1.42 1.42m12.72 12.72l1.42 1.42M0 11h2m18 0h2M3.22 18.78l1.42-1.42M17.36 4.64l1.42-1.42"/></g></g></svg>')
+    center center/contain no-repeat;
 }
 .adjust-bar__container_theme_light::after {
   top: 13px;
   right: 13px;
   width: 34px;
   height: 34px;
-  background: url('data:image/svg+xml;utf8,<svg width="24" height="24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M-1140-250H226v768h-1366z"/><path d="M0 0h24v24H0z"/><g transform="translate(1 1)" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" stroke="#fff"><circle cx="11" cy="11" r="5"/><path d="M11 0v2m0 18v2M3.22 3.22l1.42 1.42m12.72 12.72l1.42 1.42M0 11h2m18 0h2M3.22 18.78l1.42-1.42M17.36 4.64l1.42-1.42"/></g></g></svg>') center center/contain
-    no-repeat;
+  background: url('data:image/svg+xml;utf8,<svg width="24" height="24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M-1140-250H226v768h-1366z"/><path d="M0 0h24v24H0z"/><g transform="translate(1 1)" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" stroke="#fff"><circle cx="11" cy="11" r="5"/><path d="M11 0v2m0 18v2M3.22 3.22l1.42 1.42m12.72 12.72l1.42 1.42M0 11h2m18 0h2M3.22 18.78l1.42-1.42M17.36 4.64l1.42-1.42"/></g></g></svg>')
+    center center/contain no-repeat;
 }
 .adjust-bar_theme_temp {
   background-image: linear-gradient(
@@ -557,14 +557,14 @@ input[type='checkbox'] {
   padding-right: 32px;
 }
 .modal__value_temp {
-  background: url('data:image/svg+xml;utf8,<svg width="24" height="24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"/><path d="M14 14.76V3.5a2.5 2.5 0 1 0-5 0v11.26a4.5 4.5 0 1 0 5 0z" stroke="#F5A623" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle fill="#FFD93E" fill-rule="nonzero" cx="11.5" cy="18.5" r="3.5"/></g></svg>') calc(100% + 10px) 0% /
-    contain no-repeat;
+  background: url('data:image/svg+xml;utf8,<svg width="24" height="24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"/><path d="M14 14.76V3.5a2.5 2.5 0 1 0-5 0v11.26a4.5 4.5 0 1 0 5 0z" stroke="#F5A623" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle fill="#FFD93E" fill-rule="nonzero" cx="11.5" cy="18.5" r="3.5"/></g></svg>')
+    calc(100% + 10px) 0% / contain no-repeat;
 }
 .modal__value_light {
   height: 45px;
   padding-right: 45px;
-  background: url('data:image/svg+xml;utf8,<svg width="24" height="24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M-1140-250H226v768h-1366z"/><path d="M0 0h24v24H0z"/><g transform="translate(1 1)" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" stroke="#333"><circle stroke-opacity=".4" cx="11" cy="11" r="5"/><path stroke-opacity=".1" d="M11 0v2m0 18v2M3.22 3.22l1.42 1.42m12.72 12.72l1.42 1.42M0 11h2m18 0h2M3.22 18.78l1.42-1.42M17.36 4.64l1.42-1.42"/></g></g></svg>') right center/contain
-    no-repeat;
+  background: url('data:image/svg+xml;utf8,<svg width="24" height="24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M-1140-250H226v768h-1366z"/><path d="M0 0h24v24H0z"/><g transform="translate(1 1)" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" stroke="#333"><circle stroke-opacity=".4" cx="11" cy="11" r="5"/><path stroke-opacity=".1" d="M11 0v2m0 18v2M3.22 3.22l1.42 1.42m12.72 12.72l1.42 1.42M0 11h2m18 0h2M3.22 18.78l1.42-1.42M17.36 4.64l1.42-1.42"/></g></g></svg>')
+    right center/contain no-repeat;
 }
 .modal__status {
   margin-bottom: 20px;
@@ -713,7 +713,8 @@ html {
   padding-right: 31px;
 }
 .weather__item_cloud-drizzle {
-  background: url('data:image/svg+xml;utf8,<svg width="26" height="26" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M0 0h26v26H0z"/><path d="M15 20v2m0-9v2m-5 7v2m0-9v2m11 .58A5 5 0 0 0 19 8h-1.26A8 8 0 1 0 5 16.25" stroke-linecap="round" stroke-linejoin="round" stroke="#333" stroke-width="3"/></g></svg>') 100% 70%/26px no-repeat;
+  background: url('data:image/svg+xml;utf8,<svg width="26" height="26" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M0 0h26v26H0z"/><path d="M15 20v2m0-9v2m-5 7v2m0-9v2m11 .58A5 5 0 0 0 19 8h-1.26A8 8 0 1 0 5 16.25" stroke-linecap="round" stroke-linejoin="round" stroke="#333" stroke-width="3"/></g></svg>')
+    100% 70%/26px no-repeat;
 }
 .stats {
   opacity: 0;
@@ -723,22 +724,22 @@ html {
   height: 24px;
 }
 .panel__icon_temp_off {
-  background: url('data:image/svg+xml;utf8,<svg width="24" height="24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"/><path d="M14 14.76V3.5a2.5 2.5 0 1 0-5 0v11.26a4.5 4.5 0 1 0 5 0z" stroke-opacity=".4" stroke="#333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle fill-opacity=".1" fill="#333" fill-rule="nonzero" cx="11.5" cy="18.5" r="3.5"/></g></svg>') center center/contain
-    no-repeat;
+  background: url('data:image/svg+xml;utf8,<svg width="24" height="24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"/><path d="M14 14.76V3.5a2.5 2.5 0 1 0-5 0v11.26a4.5 4.5 0 1 0 5 0z" stroke-opacity=".4" stroke="#333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle fill-opacity=".1" fill="#333" fill-rule="nonzero" cx="11.5" cy="18.5" r="3.5"/></g></svg>')
+    center center/contain no-repeat;
 }
 .panel__icon_temp_on {
-  background: url('data:image/svg+xml;utf8,<svg width="24" height="24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"/><path d="M14 14.76V3.5a2.5 2.5 0 1 0-5 0v11.26a4.5 4.5 0 1 0 5 0z" stroke="#F5A623" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle fill="#FFD93E" fill-rule="nonzero" cx="11.5" cy="18.5" r="3.5"/></g></svg>') center center/contain
-    no-repeat;
+  background: url('data:image/svg+xml;utf8,<svg width="24" height="24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"/><path d="M14 14.76V3.5a2.5 2.5 0 1 0-5 0v11.26a4.5 4.5 0 1 0 5 0z" stroke="#F5A623" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle fill="#FFD93E" fill-rule="nonzero" cx="11.5" cy="18.5" r="3.5"/></g></svg>')
+    center center/contain no-repeat;
 }
 .panel__icon_light_off {
-  background: url('data:image/svg+xml;utf8,<svg width="24" height="24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M-1140-250H226v768h-1366z"/><path d="M0 0h24v24H0z"/><g transform="translate(1 1)" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" stroke="#333"><circle stroke-opacity=".4" cx="11" cy="11" r="5"/><path stroke-opacity=".1" d="M11 0v2m0 18v2M3.22 3.22l1.42 1.42m12.72 12.72l1.42 1.42M0 11h2m18 0h2M3.22 18.78l1.42-1.42M17.36 4.64l1.42-1.42"/></g></g></svg>') center center/contain
-    no-repeat;
+  background: url('data:image/svg+xml;utf8,<svg width="24" height="24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M-1140-250H226v768h-1366z"/><path d="M0 0h24v24H0z"/><g transform="translate(1 1)" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" stroke="#333"><circle stroke-opacity=".4" cx="11" cy="11" r="5"/><path stroke-opacity=".1" d="M11 0v2m0 18v2M3.22 3.22l1.42 1.42m12.72 12.72l1.42 1.42M0 11h2m18 0h2M3.22 18.78l1.42-1.42M17.36 4.64l1.42-1.42"/></g></g></svg>')
+    center center/contain no-repeat;
 }
 .panel__icon_light_on {
-  background: url('data:image/svg+xml;utf8,<svg width="24" height="24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M-1140-250H226v768h-1366z"/><path d="M0 0h24v24H0z"/><g transform="translate(1 1)" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><circle stroke="#F5A623" cx="11" cy="11" r="5"/><path d="M11 0v2m0 18v2M3.22 3.22l1.42 1.42m12.72 12.72l1.42 1.42M0 11h2m18 0h2M3.22 18.78l1.42-1.42M17.36 4.64l1.42-1.42" stroke="#FFD93E"/></g></g></svg>') center center/contain
-    no-repeat;
+  background: url('data:image/svg+xml;utf8,<svg width="24" height="24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M-1140-250H226v768h-1366z"/><path d="M0 0h24v24H0z"/><g transform="translate(1 1)" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><circle stroke="#F5A623" cx="11" cy="11" r="5"/><path d="M11 0v2m0 18v2M3.22 3.22l1.42 1.42m12.72 12.72l1.42 1.42M0 11h2m18 0h2M3.22 18.78l1.42-1.42M17.36 4.64l1.42-1.42" stroke="#FFD93E"/></g></g></svg>')
+    center center/contain no-repeat;
 }
 .panel__icon_clock {
-  background: url('data:image/svg+xml;utf8,<svg width="24" height="24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M-925-250H441v768H-925z"/><path d="M0 0h24v24H0z"/><g transform="translate(2 2)" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><circle cx="10" cy="10" r="10"/><path opacity=".3" d="M10 4v6l3 3"/></g></g></svg>') center center/contain
-    no-repeat;
+  background: url('data:image/svg+xml;utf8,<svg width="24" height="24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M-925-250H441v768H-925z"/><path d="M0 0h24v24H0z"/><g transform="translate(2 2)" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><circle cx="10" cy="10" r="10"/><path opacity=".3" d="M10 4v6l3 3"/></g></g></svg>')
+    center center/contain no-repeat;
 }
