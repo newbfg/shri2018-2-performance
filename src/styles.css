@@ -719,7 +719,7 @@ html {
   padding-right: 31px;
 }
 .weather__item_cloud-drizzle {
-  background: url('assets/cloud-drizzle.png') 100% 70%/26px no-repeat;
+  background: url('assets/cloud-drizzle.svg') 100% 70%/26px no-repeat;
 }
 .stats {
   opacity: 0;
