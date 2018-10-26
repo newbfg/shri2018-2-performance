@@ -3,41 +3,9 @@ const CleanWebpackPlugin = require('clean-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
-function recursiveIssuer(m) {
-  if (m.issuer) {
-    return recursiveIssuer(m.issuer);
-  } else if (m.name) {
-    return m.name;
-  } else {
-    return false;
-  }
-}
-
 module.exports = {
   entry: {
-    app: './src/scripts.js',
-    styles: './src/styles.css',
-    bootstrap: './src/bootstrap.css'
-  },
-  optimization: {
-    splitChunks: {
-      cacheGroups: {
-        stylesStyles: {
-          name: 'styles',
-          test: (m, c, entry = 'styles') =>
-            m.constructor.name === 'CssModule' && recursiveIssuer(m) === entry,
-          chunks: 'all',
-          enforce: true
-        },
-        bootstrapStyles: {
-          name: 'bootstrap',
-          test: (m, c, entry = 'bootstrap') =>
-            m.constructor.name === 'CssModule' && recursiveIssuer(m) === entry,
-          chunks: 'all',
-          enforce: true
-        }
-      }
-    }
+    app: './src/scripts.js'
   },
   output: {
     filename: 'scripts.js',
@@ -75,13 +43,11 @@ module.exports = {
     ]
   },
   plugins: [
+    new MiniCssExtractPlugin({ filename: 'style.css' }),
     new CleanWebpackPlugin(['dist']),
     new HtmlWebpackPlugin({
       title: 'Smarthome',
       template: 'src/index.html'
-    }),
-    new MiniCssExtractPlugin({
-      filename: '[name].css'
     })
   ]
 };
