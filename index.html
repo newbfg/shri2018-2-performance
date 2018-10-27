@@ -20,6 +20,8 @@
                                             o888o
      ###################################################################### -->
     <link rel="stylesheet" href="styles.css">
+    <link rel="preload" href="fonts/ptsansbold.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/ptsansnarrowbold.woff2" as="font" type="font/woff2" crossorigin>
 </head>
 
 <!-- ######################################################################
@@ -494,11 +496,21 @@
                                 .o..P'
                                 `Y8P'
      ###################################################################### -->
-<link href="bootstrap.css" rel="stylesheet" media="screen">
 <style type="text/css">
     .main__greeting {
         font-family: "PT Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     }
+
+    @font-face {
+	font-family: 'PT Sans';
+	font-style: normal;
+	src: local('PT Sans Bold'), url('fonts/ptsansbold') format('woff2');
+} 
+
+ @font-face {
+	font-family: 'PT Sans Narrow';
+	src: local('PT Sans Narrow Bold'), url('fonts/ptsansnarrowbold.woff2') format('woff2');
+} 
 </style>
 
 </body>
