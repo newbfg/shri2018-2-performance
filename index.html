@@ -6,7 +6,7 @@
 
     <title>Smarthome</title>
 
-    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="shortcut icon" href="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAoHBwgHBgoICAgLCgoLDhgQDg0NDh0VFhEYIx8lJCIfIiEmKzcvJik0KSEiMEExNDk7Pj4+JS5ESUM8SDc9Pjv/2wBDAQoLCw4NDhwQEBw7KCIoOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozv/wAARCAAwADADASIAAhEBAxEB/8QAHAAAAQQDAQAAAAAAAAAAAAAABwAEBQYBAgMI/8QANRAAAQMDAQUECAYDAAAAAAAAAQIDBAAFEQYTITFBUQcSYbEUIjI0QmJxchUjJFORkqHB0f/EABgBAQADAQAAAAAAAAAAAAAAAAMAAQIE/8QAGxEBAQACAwEAAAAAAAAAAAAAAAERMQISISL/2gAMAwEAAhEDEQA/AC8wwzsG/wApHsj4R0rpsGf2kf1FJj3dv7R5V0qIqfaFd02PTLno6WkyJR2LfAFIIPeUPoPMVr2fXxq/2BKZCWjLiYacG4qUAB3VkePD6g0OO0KbNk6pkMyprUhDCiGUMqylpJ+E/NuGfGmGk7k9bNQRnW7gIKFLCXXFAlBT0UBxB/xxpevyPt69AbBn9pH9RWrjTSGlqDSAQkn2RXVKgtIUkggjIIO4itJHu7n2HyoiEx7u39o8qj7/AH+Dp63qlzXkpJB2TZPrOKA4Af75VIMDDDY+UeVUrtStKp9kYliRFYRDUpSlPEhSsjclOAd5I4fTpVyZqr5Aluc43O5SJqmWmFPrKy20MJBPQU2QooWlYAJSc4UMj+KxSroANuh9bx9Qx24MkBq4toJUlKMIWkc09N2Mj+Ktj4yw4PlPlQl7Jm4YvbjpnLRL2SkiNsvVWjcc97PLpii6oZSR1FBymKbjcwgMADpTG7WW332IItyjh9pKwsJKiMEc8g+NP6xWWgi1/oi22CD+JQX1N7WR3fR1ncARnCee7HPlVW0vAhXPUUOHcHtlHdXhRzjO44GeWTuzT/WcO4O6tuX6eQ4n0hRRhClDB4YqKRp+9ODKLTNUOojr/wCU81sN2PdostqtUdtNuisp7iO5tUpBWoeKuJqSqqdnEOXB0ohibGdjOpfWe46kpODjfg1a6G7LNP/Z">
     <!-- ######################################################################
 
         .oooooo..o                     o8o                 .
@@ -19,9 +19,6 @@
                                              888
                                             o888o
      ###################################################################### -->
-    <script src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
-    <script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
-    <script src="https://unpkg.com/babel-standalone@6.26.0/babel.js"></script>
     <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -247,22 +244,12 @@
                     </div>
 
                     <script type="text/babel">
-                        class App extends React.Component {
-                            render() {
-                                return (
                                     <div class="panel scenarios__panel">
                                         <div class="panel__icon panel__icon_clock"></div>
                                         <div class="panel__text">
                                             <div class="panel__title">Я ухожу</div>
                                         </div>
                                     </div>
-                                );
-                            }
-                        }
-
-                        ReactDOM.render(<App />, document.getElementsByClassName('scenarios__page')[1]);
-                    </script>
-
                 </section>
             </div>
 
