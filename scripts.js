@@ -241,12 +241,6 @@ selectButton.addEventListener('click', function() {
   popup.classList.toggle('filter__select-popup_open');
 });
 
-let widths = '';
-window.addEventListener('scroll', function() {
-    widths += document.querySelectorAll('body')[0].offsetWidth;
-    document.querySelector('.stats').innerHTML = widths;
-});
-
 selectOptions.forEach(o => {
   o.addEventListener('click', function(e) {
     document.querySelector('#' + e.target.dataset.group).checked = true;
