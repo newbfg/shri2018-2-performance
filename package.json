@@ -1,0 +1,23 @@
+{
+  "name": "shri2018-2-performance",
+  "version": "1.0.0",
+  "description": "Оптимизируйте страницу, выложите на GitHub Pages. Зайдите на https://shri-performance.ru и отправьте урл своей страницы.",
+  "main": "banner.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/avi2d/shri2018-2-performance.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/avi2d/shri2018-2-performance/issues"
+  },
+  "homepage": "https://github.com/avi2d/shri2018-2-performance#readme",
+  "devDependencies": {
+    "purify-css": "^1.2.5"
+  }
+}
