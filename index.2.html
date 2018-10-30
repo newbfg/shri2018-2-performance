@@ -1,0 +1,419 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Smarthome</title>
+    <link rel="shortcut icon" href="favicon.ico"  type="image/x-icon">
+    <link rel="preload" as="image" href="./assets/logo.png">
+    <link rel="preload" as="image" href="./assets/sh.webp">
+    <link rel="preload" as="image" href="./assets/cloud-drizzle.svg">
+    <link rel="preload" as="image" href="./assets/panel__icon_clock.svg">
+    <link rel="preload" as="image" href="./assets/panel__icon_light_off.svg">
+    <link rel="preload" as="image" href="./assets/panel__icon_light_on.svg">
+    <link rel="preload" as="image" href="./assets/panel__icon_temp_off.svg">
+    <link rel="preload" as="image" href="./assets/panel__icon_temp_on.svg">
+    <link rel="preload" href="./fonts/subset-PTSans-Bold.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="./fonts/subset-PTSans-NarrowBold.woff2" as="font" type="font/woff2" crossorigin>
+    <script src="s.js" async></script>
+    <style type="text/css">
+    *{box-sizing:border-box}html{font-size:100%;-webkit-text-size-adjust:100%;height:100%}a{color:#2c3e50;text-decoration:none}label{display:block;margin-bottom:5px}article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{display:block}button,input,select,textarea{margin:0;font-size:100%;vertical-align:middle}button,input{line-height:normal}button,html input[type='button'],input[type='reset'],input[type='submit']{cursor:pointer;-webkit-appearance:button}label,select,button,input[type='button'],input[type='reset'],input[type='submit'],input[type='radio'],input[type='checkbox']{cursor:pointer}label,input,button,select,textarea{font-size:15px;font-weight:400;line-height:20px}input,button,select,textarea{font-family:'PT Sans','Helvetica Neue',Helvetica,Arial,sans-serif}input,textarea,.uneditable-input{width:206px}input[type='radio'],input[type='checkbox']{margin:4px 0 0;line-height:normal}input[type='file'],input[type='image'],input[type='submit'],input[type='reset'],input[type='button'],input[type='radio'],input[type='checkbox']{width:auto}.link,.link:active,.link:visited{color:rgba(51,51,51,.6)}.link{text-decoration:none}.link_active,.link:hover{color:inherit}
+    </style>
+</head>
+
+<style>@font-face{font-family:'PT Sans';font-style:normal;font-weight:700;src:local('PT Sans Bold'),url(./fonts/subset-PTSans-Bold.woff2) format('woff2')}@font-face{font-family:'PT Sans Narrow';font-weight:700;src:local('PT Sans Narrow Bold'),url(./fonts/subset-PTSans-NarrowBold.woff2) format('woff2')}.page{background-color: #fff;height:100%;font:14px Arial,sans-serif;color:#333;line-height:1.143;margin:0 auto;padding:0;width:1366px}</style>
+
+<body class="page">
+    <style>.page__wrapper{display:flex;flex-direction:column;height:100%}</style>
+    <div class="page__wrapper">
+        <style>.page__wrapper-content{flex:1 0 auto}</style>
+        <div class="page__wrapper-content">
+            <style>.header{width:100%;height:92px;padding:0 40px;border-bottom:1px solid #f0f0f0;display:flex;align-items:center;background:#fff}.logo{display:inline-block;width:108px;height:27px;position:relative;background-image:url(./assets/logo.png);background-repeat:no-repeat;background-position:left top;background-size:cover}.logo__ya{display:block;position:absolute;z-index:10;outline:0;height:100%;width:69px;left:0;top:0}.logo__ya-sub{display:block;position:absolute;z-index:5;outline:0;height:100%;width:100%;left:0;top:0}.menu{margin-left:52px}.menu__item{margin-right:27px;font-size:16px;font-weight:700;line-height:20px}.menu__list{display:flex;justify-content:flex-start;list-style:none;padding:0;margin:0}
+                </style>
+            <header class="header">
+                <div class="logo header__logo">
+                    <a href="yandex.ru" class="link logo__ya"></a>
+                    <a href="#" class="link logo__ya-sub"></a>
+                </div>
+                <nav class="menu">
+                    <ul class="menu__list">
+                        <li class="menu__item">
+                            <a href="#" class="link menu__link link_active">Сводка</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="link menu__link">Устройства</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="link menu__link">Сценарии</a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+
+            <style>.content{width:100%;display:flex;flex-wrap:wrap;justify-content:space-between;padding-top:29px}.content__item{width:100%;margin-bottom:29px;position:relative}.content__item_half{width:49%}.content__item_main{padding-left:40px}.content__item_scenarios{padding-right:40px}.content__item-header{font-size:18px;font-weight:700;margin-bottom:20px}.content__item-header_devices{padding-left:40px;display:inline-block;margin-right:11px}</style>
+            <main class="content">
+                <div class="content__item content__item_half content__item_main">
+                    <div class="content__item-header">Главное</div>
+                    <style>.main{height:331px;border-radius:20px;padding:0 20px 0 25px;display:flex;justify-content:space-between;background:url(assets/sh.webp) center center/cover no-repeat}</style>
+                    <section class="main">
+                        <style>.main__info{width:61.585%;padding-top:20px;padding-left:20px;background:rgba(255,255,255,.6)}</style>
+                        <div class="main__info">
+                            <style>.main__greeting{font-family:'PT Sans','Helvetica Neue',Helvetica,Arial,sans-serif;margin-top:6px;font-size:27px;font-weight:700}</style>
+                            <div class="main__greeting">Привет, Геннадий!</div>
+                            <style>.main__status{margin-top:6px;line-height:16px}</style>
+                            <div class="main__status">Двери и окна закрыты, сигнализация включена.</div>
+                            <style>.weather{display:flex}.main__weather{margin-top:25px}</style>
+                            <div class="weather main__weather">
+                                <style>.weather__item{margin-right:18px}</style>
+                                <div class="weather__item">
+                                    <style>.weather__item-title{color:#858585;margin-bottom:4px}.weather__item-temp{font-size:36px;font-weight:700;line-height:1.16;font-family:'PT Sans Narrow','Helvetica Neue',Helvetica,Arial,sans-serif}</style>
+                                    <div class="weather__item-title">Дома</div>
+                                    <div class="weather__item-temp">+23</div>
+                                </div>
+                                <style>.weather__item_outside{padding-right:31px}.weather__item_cloud-drizzle{background:url("assets/cloud-drizzle.svg") 100% 70%/26px no-repeat}</style>
+                                <div class="weather__item weather__item_outside weather__item_cloud-drizzle">
+                                    <div class="weather__item-title">За окном</div>
+                                    <div class="weather__item-temp">+19</div>
+                                </div>
+                            </div>
+                        </div>
+                        <style>.main__upcoming-wrapper{width:200px;height:100%;overflow:hidden}</style>
+                        <div class="main__upcoming-wrapper">
+                            <style>.main__upcoming{width:220px;height:100%;overflow-y:scroll}</style>
+                            <div class="main__upcoming">
+                                <style>.panel{padding:14px;min-height:100px;width:200px;border-radius:20px;display:flex;flex-direction:column;justify-content:space-between;flex-shrink:0;background:#f7f7f7;cursor:pointer;transition:opacity 0.3s ease-out}.panel:hover{background:#fff;box-shadow:0 2px 6px 0 rgba(197,186,186,.5)}.panel:active{box-shadow:none}.main__panel{margin-bottom:14px;position:relative}.panel_device{height:120px}.panel_first{margin-top:20px}</style>
+                                <div class="panel main__panel panel_device panel_first">
+                                    <style>.panel__icon{width:24px;height:24px}.panel__icon_temp_off{background:url("assets/panel__icon_temp_off.svg") center center/contain no-repeat}.panel__icon_temp_on{background:url("assets/panel__icon_temp_on.svg") center center/contain no-repeat}.panel__icon_light_off{background:url("assets/panel__icon_light_off.svg") center center/contain no-repeat}.panel__icon_light_on{background:url("assets/panel__icon_light_on.svg") center center/contain no-repeat}.panel__icon_clock{background:url("assets/panel__icon_clock.svg") center center/contain no-repeat}</style>
+                                    <div class="panel__icon panel__icon_temp_off"></div>
+                                    <div class="panel__text">
+                                        <style>.panel__title{font-weight:700;margin-bottom:4px}</style>
+                                        <div class="panel__title">Philips Cooler</div>
+                                        <style>.panel__sub{font-size:12px;color:#858585}</style>
+                                        <div class="panel__sub">Начнет охлаждать в 16:30</div>
+                                    </div>
+                                </div>
+                                <div class="panel main__panel panel_device">
+                                    <div class="panel__icon panel__icon_light_off"></div>
+                                    <div class="panel__text">
+                                        <div class="panel__title">Xiaomi Yeelight LED Smart Bulb</div>
+                                        <div class="panel__sub">Включится в 17:00</div>
+                                    </div>
+                                </div>
+                                <div class="panel main__panel panel_device panel_out_bot">
+                                    <div class="panel__icon panel__icon_light_off"></div>
+                                    <div class="panel__text">
+                                        <div class="panel__title">Xiaomi Yeelight LED Smart Bulb</div>
+                                        <div class="panel__sub">Включится в 17:00</div>
+                                    </div>
+                                </div>
+                                <div class="panel main__panel panel_device panel_out_bot">
+                                    <style>img{width:auto;height:auto;max-width:100%;vertical-align:middle;border:0}</style>
+                                    <a target=_blank href="http://ya.ru"><img src=./assets/banner.webp />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <div class="content__item content__item_half content__item_scenarios">
+                    <div class="content__item-header">
+                        Избранные сценарии
+                    </div>
+                    <style>.paginator{height:16px;width:47px;display:flex;justify-content:space-between}.scenarios__paginator{position:absolute;top:0;right:40px}.paginator div{width:16px}</style>
+                    <div class="paginator scenarios__paginator">
+                        <style>.paginator__arrow{opacity:1;cursor:pointer}.paginator__arrow:hover{opacity:.5}.paginator__arrow:active{opacity:.3}.paginator__arrow_disabled{opacity:.3}</style>
+                        <div class="paginator__arrow paginator__arrow_disabled paginator__arrow_left">
+                            <svg viewBox="0 0 9 16" width="100%" height="16px">
+                                <path fill="currentColor" fill-rule="evenodd" d="M8.7 14.3c.4.4.4 1 0 1.4-.4.4-1 .4-1.4 0l-7-7c-.4-.4-.4-1 0-1.4l7-7c.4-.4 1-.4 1.4 0 .4.4.4 1 0 1.4L2.4 8l6.3 6.3z"></path>
+                            </svg>
+                        </div>
+                        <div class="paginator__arrow paginator__arrow_right">
+                            <svg viewBox="0 0 9 16" width="100%" height="16px">
+                                <path fill="currentColor" fill-rule="evenodd" d="M.3 14.3c-.4.4-.4 1.02 0 1.4.38.4 1 .4 1.4 0l7-7c.4-.4.4-1.02 0-1.4l-7-7C1.3-.1.68-.1.3.3c-.4.38-.4 1 0 1.4L6.6 8 .3 14.3z"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <style>.scenarios{max-height:331px;background:#fff;display:flex;justify-content:flex-start;overflow-x:hidden}</style>
+                    <section class="scenarios">
+                        <style>.scenarios__page{display:grid;grid-template-columns:repeat(3,200px);grid-template-rows:repeat(3,100px);grid-column-gap:15px;grid-row-gap:15px;justify-content:space-between;margin-right:15px}</style>
+                        <div class="scenarios__page">
+                            <div class="panel scenarios__panel">
+                                <div class="panel__icon panel__icon_light_on"></div>
+                                <div class="panel__text">
+                                    <div class="panel__title">Выключить весь свет в доме и во дворе</div>
+                                </div>
+                            </div>
+                            <div class="panel scenarios__panel">
+                                <div class="panel__icon panel__icon_clock"></div>
+                                <div class="panel__text">
+                                    <div class="panel__title">Я ухожу</div>
+                                </div>
+                            </div>
+                            <div class="panel scenarios__panel">
+                                <div class="panel__icon panel__icon_light_on"></div>
+                                <div class="panel__text">
+                                    <div class="panel__title">Включить свет в корридоре</div>
+                                </div>
+                            </div>
+                            <div class="panel scenarios__panel">
+                                <div class="panel__icon panel__icon_temp_on"></div>
+                                <div class="panel__text">
+                                    <div class="panel__title">Набрать горячую ванну</div>
+                                    <div class="panel__sub">Начнётся в 18:00</div>
+                                </div>
+                            </div>
+                            <div class="panel scenarios__panel">
+                                <div class="panel__icon panel__icon_light_on"></div>
+                                <div class="panel__text">
+                                    <div class="panel__title">Выключить весь свет в доме и во дворе</div>
+                                </div>
+                            </div>
+                            <div class="panel scenarios__panel">
+                                <div class="panel__icon panel__icon_clock"></div>
+                                <div class="panel__text">
+                                    <div class="panel__title">Я ухожу</div>
+                                </div>
+                            </div>
+                            <div class="panel scenarios__panel">
+                                <div class="panel__icon panel__icon_light_on"></div>
+                                <div class="panel__text">
+                                    <div class="panel__title">Включить свет в корридоре</div>
+                                </div>
+                            </div>
+                            <div class="panel scenarios__panel">
+                                <div class="panel__icon panel__icon_temp_on"></div>
+                                <div class="panel__text">
+                                    <div class="panel__title">Набрать горячую ванну</div>
+                                    <div class="panel__sub">Начнётся в 18:00</div>
+                                </div>
+                            </div>
+                            <div class="panel scenarios__panel">
+                                <div class="panel__icon panel__icon_light_on"></div>
+                                <div class="panel__text">
+                                    <div class="panel__title">Выключить весь свет в доме и во дворе</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="scenarios__page">
+                            <div class="panel scenarios__panel">
+                                <div class="panel__icon panel__icon_clock"></div>
+                                <div class="panel__text">
+                                    <div class="panel__title">Я ухожу</div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <style>
+                    .devices{display:flex;justify-content:flex-start;overflow-x:hidden;padding:20px 0 6px 40px}.devices::after{content:'';display:inline-block;min-width:25px}
+                </style>
+                <div class="content__item content__item_devices">
+                    <span class="content__item-header content__item-header_devices">
+                        Избранные устройства
+                    </span>
+                    <style>.filter__select{display:none}.filter__item-label{display:inline-block;font-size:13px;line-height:1;font-weight:700;background:#f7f7f7;min-height:30px;padding:8px 13px;border-radius:15px;margin-right:11px;cursor:pointer}.filter__item-label:hover{background:#ffd93e}.filter__item-radio{display:none}.filter__item-radio:checked+label{background:#ffd93e}.filter__item-radio_kitchen:checked~.devices .panel{display:none}.filter__item-radio_kitchen:checked~.devices .panel_kitchen{display:flex}.filter__item-radio_room:checked~.devices .panel{display:none}.filter__item-radio_room:checked~.devices .panel_room{display:flex}.filter__item-radio_lamp:checked~.devices .panel{display:none}.filter__item-radio_lamp:checked~.devices .panel_lamp{display:flex}.filter__item-radio_cam:checked~.devices .panel{display:none}.filter__item-radio_cam:checked~.devices .panel_cam{display:flex}</style>
+                    <div class="filter__select">
+                        <button class="filter__select-button" type="button">
+                            <span class="button__text">Все</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="6">
+                                <path d="M10.3 0L5.5 4.7.7 0 0 .7 5.5 6 11 .7z" />
+                            </svg>
+                        </button>
+                        <div class="filter__select-popup" aria-hidden="true">
+                            <div class="filter__select-menu">
+                                <div class="filter__select-item filter__select-item_checked" data-group="all">Все</div>
+                                <div class="filter__select-item" data-group="kitchen">Кухня</div>
+                                <div class="filter__select-item" data-group="room">Зал</div>
+                                <div class="filter__select-item" data-group="lamp">Лампочки</div>
+                                <div class="filter__select-item" data-group="cam">Камеры</div>
+                            </div>
+                        </div>
+                    </div>
+                    <input class="filter__item-radio filter__item_devices filter__item-radio_all" type="radio" name="filter"
+                        id="all" checked>
+                    <label class="filter__item-label filter__item_devices" for="all">Все</label>
+                    <input class="filter__item-radio filter__item_devices filter__item-radio_kitchen" type="radio" name="filter"
+                        id="kitchen">
+                    <label class="filter__item-label filter__item_devices" for="kitchen">Кухня</label>
+                    <input class="filter__item-radio filter__item_devices filter__item-radio_room" type="radio" name="filter"
+                        id="room">
+                    <label class="filter__item-label filter__item_devices" for="room">Зал</label>
+                    <input class="filter__item-radio filter__item_devices filter__item-radio_lamp" type="radio" name="filter"
+                        id="lamp">
+                    <label class="filter__item-label filter__item_devices" for="lamp">Лампочки</label>
+                    <input class="filter__item-radio filter__item_devices filter__item-radio_cam" type="radio" name="filter"
+                        id="cam">
+                    <label class="filter__item-label filter__item_devices" for="cam">Камеры</label>
+                    <style>.devices__paginator{position:absolute;top:0;right:40px}</style>
+                    <div class="paginator devices__paginator">
+                        <div class="paginator__arrow paginator__arrow_disabled paginator__arrow_left">
+                            <svg viewBox="0 0 9 16" width="100%" height="16px">
+                                <path fill="currentColor" fill-rule="evenodd" d="M8.7 14.3c.4.4.4 1 0 1.4-.4.4-1 .4-1.4 0l-7-7c-.4-.4-.4-1 0-1.4l7-7c.4-.4 1-.4 1.4 0 .4.4.4 1 0 1.4L2.4 8l6.3 6.3z"></path>
+                            </svg>
+                        </div>
+                        <div class="paginator__arrow paginator__arrow_right">
+                            <svg viewBox="0 0 9 16" width="100%" height="16px">
+                                <path fill="currentColor" fill-rule="evenodd" d="M.3 14.3c-.4.4-.4 1.02 0 1.4.38.4 1 .4 1.4 0l7-7c.4-.4.4-1.02 0-1.4l-7-7C1.3-.1.68-.1.3.3c-.4.38-.4 1 0 1.4L6.6 8 .3 14.3z"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <section class="devices">
+                        <style>.devices__panel{margin-right:15px}</style>
+                        <div class="panel panel_device devices__panel panel_room panel_floor">
+                            <div class="panel__icon panel__icon_light_on"></div>
+                            <div class="panel__text">
+                                <div class="panel__title">Xiaomi Warm Floor</div>
+                                <div class="panel__sub">Включено</div>
+                            </div>
+                        </div>
+                        <div class="panel panel_device devices__panel panel_lamp">
+                            <div class="panel__icon panel__icon_light_on"></div>
+                            <div class="panel__text">
+                                <div class="panel__title">Xiaomi Yeelight LED Smart Bulb</div>
+                                <div class="panel__sub">Включено</div>
+                            </div>
+                        </div>
+                        <div class="panel panel_device devices__panel panel_cam">
+                            <div class="panel__icon panel__icon_light_off"></div>
+                            <div class="panel__text">
+                                <div class="panel__title">D-Link Omna 180 Cam</div>
+                                <div class="panel__sub">Включится в 17:00</div>
+                            </div>
+                        </div>
+                        <div class="panel panel_device devices__panel panel_room panel_temp">
+                            <div class="panel__icon panel__icon_temp_off"></div>
+                            <div class="panel__text">
+                                <div class="panel__title">Elgato Eve Degree Connected</div>
+                                <div class="panel__sub">Включится в 17:00</div>
+                            </div>
+                        </div>
+                        <div class="panel panel_device devices__panel panel_lamp">
+                            <div class="panel__icon panel__icon_light_off"></div>
+                            <div class="panel__text">
+                                <div class="panel__title">LIFX Mini Day & Dusk A60 E27</div>
+                                <div class="panel__sub">Включится в 17:00</div>
+                            </div>
+                        </div>
+                        <div class="panel panel_device devices__panel panel_room">
+                            <div class="panel__icon panel__icon_light_on"></div>
+                            <div class="panel__text">
+                                <div class="panel__title">Xiaomi Mi Air Purifier 2S</div>
+                                <div class="panel__sub">Включено</div>
+                            </div>
+                        </div>
+                        <div class="panel panel_device devices__panel panel_lamp">
+                            <div class="panel__icon panel__icon_light_off"></div>
+                            <div class="panel__text">
+                                <div class="panel__title">Philips Zhirui</div>
+                                <div class="panel__sub">Выключено</div>
+                            </div>
+                        </div>
+                        <div class="panel panel_device devices__panel panel_kitchen">
+                            <div class="panel__icon panel__icon_light_on"></div>
+                            <div class="panel__text">
+                                <div class="panel__title">Philips Purifier</div>
+                                <div class="panel__sub">Включено</div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </main>
+        </div>
+        <style>.footer{flex:0 0 auto;display:flex;justify-content:flex-start;align-items:center;flex-wrap:wrap;padding-left:40px;width:100%;height:60px;font-size:12px}</style>
+        <footer class="footer">
+            <style>.footer__link{margin-right:20px}</style>
+            <a href="#" class="link footer__link">Помощь</a>
+            <a href="#" class="link footer__link">Обратная связь</a>
+            <a href="#" class="link footer__link">Разработчикам</a>
+            <a href="#" class="link footer__link">Условия использования</a>
+        </footer>
+    </div>
+    <style>.modal{display:none;flex-direction:column;justify-content:center;align-items:center;position:fixed;z-index:1;left:0;top:0;width:100%;height:100%;overflow:auto;background:rgba(51,51,51,.5)}.modal_open{display:flex}.modal_open .modal__content{animation:modal 0.2s ease forwards}.modal__title{font-size:27px;font-weight:700;margin-bottom:6px}.modal__value{box-sizing:content-box;position:absolute;top:20px;right:20px;font-size:36px;font-weight:700;max-width:62px;height:40px;padding-right:32px}.modal__value_temp{background:url("assets/panel__icon_temp_on.svg") calc(100% + 10px) 0% / contain no-repeat}.modal__value_light{height:45px;padding-right:45px;background:url("assets/panel__icon_light_off.svg") right center/contain no-repeat}.modal__status{margin-bottom:20px}.modal__adjust{margin-top:25px}.modal__button{width:48.5%}.modal__content{max-width:640px;width:100%}.modal__body{position:relative;flex-shrink:0;padding:25px;margin-bottom:15px;border-radius:20px;background:#fff}.modal__controls{width:100%;display:flex;justify-content:space-between;flex-wrap:wrap}.adjust-bar{-webkit-appearance:none;appearance:none;outline:none;border-radius:30px;width:100%;height:60px;margin:0;display:flex;justify-content:space-between;align-items:center;position:relative}.adjust-bar::-webkit-slider-thumb{-webkit-appearance:none;appearance:none;cursor:pointer;width:60px;height:60px;border:3px solid rgba(51,51,51,.1);border-radius:30px;box-shadow:0 0 0 4px #fff}.adjust-bar__container_theme_temp{position:relative}.adjust-bar__container_theme_temp::before,.adjust-bar__container_theme_temp::after{color:#fff;font-size:18px;font-weight:700;position:absolute;top:20px;z-index:1;pointer-events:none}.adjust-bar__container_theme_temp::before{content:'–10';left:15px}.adjust-bar__container_theme_temp::after{content:'+30';right:15px}.adjust-bar__container_theme_light{position:relative}.adjust-bar__container_theme_light::before,.adjust-bar__container_theme_light::after{content:'';position:absolute;z-index:1;pointer-events:none}.adjust-bar__container_theme_light::before{top:14px;left:14px;width:30px;height:30px;background:url("assets/adjust-bar_light_from.svg") center center/contain no-repeat}.adjust-bar__container_theme_light::after{top:13px;right:13px;width:34px;height:34px;background:url("assets/adjust-bar_light_to.svg") center center/contain no-repeat}.adjust-bar_theme_temp{background-image:linear-gradient(90deg,#068fff 0%,#ffd800 50%,#f76b1c 100%)}.adjust-bar_theme_light{background-image:linear-gradient(90deg,#ffe682 0%,#ff9e00 100%)}.button{cursor:pointer;display:flex;justify-content:center;align-items:center;background:#fff}.button_color_yellow{background:#ffd93e}.button_size_l{font-size:18px;font-weight:700;height:60px;border-radius:20px}.button:hover{box-shadow:0 2px 6px 0 rgba(255,225,225,.6)}.button:active{box-shadow:none}.knob{width:220px;height:220px;display:flex;justify-content:center;align-items:center;position:relative}.knob svg{width:220px;height:220px;transform:rotate(90deg)}.knob__indicator{fill:none;stroke:#f5a623;stroke-width:20px;stroke-dasharray:0 629;transform:rotate(29deg)}.knob__indicator-bounds{fill:transparent;stroke:#fff;stroke-width:21px;stroke-dasharray:99 629;transform:rotate(-29deg)}.knob__indicator-bg{fill:rgba(51,51,51,.7)}.knob__indicator-mask{fill:transparent;stroke:#fff;stroke-width:22px;stroke-dasharray:4 1;transform:rotate(1deg)}.knob__self{fill:#fefefe;filter:url('#knob-shadow');cursor:pointer}.knob__value{font-size:66px;font-weight:700;position:absolute;user-select:none;pointer-events:none}.knob__wrapper{display:flex;justify-content:center;align-items:center;height:80%}</style>
+    <div class="modal modal_temp">
+        <div class="modal__content">
+            <div class="modal__body">
+                <div class="modal__title">Elgato Eve Degree Connected</div>
+                <div class="modal__value modal__value_temp">+23</div>
+                <div class="modal__status">Включено</div>
+                <div class="modal__filter">
+                    <div class="filter__item-label modal__filter-item_temp" id="manual">Вручную</div>
+                    <div class="filter__item-label modal__filter-item_temp" id="cold">Холодно</div>
+                    <div class="filter__item-label modal__filter-item_temp" id="warm">Тепло</div>
+                    <div class="filter__item-label modal__filter-item_temp" id="hot">Жарко</div>
+                </div>
+                <div class="adjust-bar__container adjust-bar__container_theme_temp modal__adjust">
+                    <input class="adjust-bar adjust-bar_theme_temp" type="range" name="lightRange" id="lightRange"
+                        value="23" min="-10" max="30" orient="vertical">
+                </div>
+            </div>
+            <div class="modal__controls">
+                <div class="button button_size_l button_color_yellow modal__button">Применить</div>
+                <div class="button button_size_l modal__button modal_close">Закрыть</div>
+            </div>
+        </div>
+    </div>
+    <div class="modal modal_light">
+        <div class="modal__content">
+            <div class="modal__body">
+                <div class="modal__title">Xiaomi Yeelight LED Smart Bulb</div>
+                <div class="modal__value modal__value_light"></div>
+                <div class="modal__status">Включено</div>
+                <div class="modal__filter">
+                    <div class="filter__item-label modal__filter-item" id="manual">Вручную</div>
+                    <div class="filter__item-label modal__filter-item" id="day">Дневной свет</div>
+                    <div class="filter__item-label modal__filter-item" id="evening">Вечерний свет</div>
+                    <div class="filter__item-label modal__filter-item" id="dawn">Рассвет</div>
+                </div>
+                <div class="adjust-bar__container adjust-bar__container_theme_light modal__adjust">
+                    <input class="adjust-bar adjust-bar_theme_light" type="range" name="tempRange" id="lightRange"
+                        value="25" min="0" max="50" orient="vertical">
+                </div>
+            </div>
+            <div class="modal__controls">
+                <div class="button button_size_l button_color_yellow modal__button">Применить</div>
+                <div class="button button_size_l modal__button modal_close">Закрыть</div>
+            </div>
+        </div>
+    </div>
+    <div class="modal modal_knob">
+        <div class="modal__content">
+            <div class="modal__body">
+                <div class="modal__title">Xiaomi Warm Floor</div>
+                <div class="modal__value modal__value_temp">+23</div>
+                <div class="modal__status">Включено</div>
+                <div class="knob__wrapper">
+                    <div class="knob">
+                        <svg viewBox="-110 -110 220 220" id="foobar">
+                            <filter id="knob-shadow">
+                                <feGaussianBlur in="SourceAlpha" stdDeviation="2" />
+                                <feOffset dx="2" dy="0" result="offsetblur" />
+                                <feFlood flood-color="rgba(134,121,71,0.45)" />
+                                <feComposite in2="offsetblur" operator="in" />
+                                <feMerge>
+                                    <feMergeNode />
+                                    <feMergeNode in="SourceGraphic" />
+                                </feMerge>
+                            </filter>
+                            <g class="knob-container">
+                                <circle class="knob_center" cx="0" cy="0" />
+                                <circle class="knob__indicator-bg" r="110" cx="0" cy="0" />
+                                <circle class="knob__indicator" r="100" cx="0" cy="0" />
+                                <circle class="knob__indicator-mask" r="100" cx="0" cy="0" />
+                                <circle class="knob__indicator-bounds" r="100" cx="0" cy="0" />
+                                <circle class="knob__self" r="89" cx="0" cy="0" />
+                                <polygon class="knob__arrow" points="-90,0 -85,5 -85,-5" />
+                            </g>
+                        </svg>
+                        <div class="knob__value">+23</div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal__controls">
+                <div class="button button_size_l button_color_yellow modal__button">Применить</div>
+                <div class="button button_size_l modal__button modal_close">Закрыть</div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
