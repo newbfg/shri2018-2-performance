@@ -1,0 +1,42 @@
+{
+  "name": "shri-hw-1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "webpack.config.js",
+  "scripts": {
+    "prod": "webpack --mode production",
+    "dev": "webpack --watch --mode development",
+    "start": "webpack-dev-server --host localhost --port 3000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shelganov/shri-hw-1.git"
+  },
+  "author": "shelganov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shelganov/shri-hw-1/issues"
+  },
+  "homepage": "https://github.com/shelganov/shri-hw-1#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-3": "^6.24.1",
+    "browser-sync": "^2.26.3",
+    "browser-sync-webpack-plugin": "^2.2.2",
+    "css-loader": "^1.0.0",
+    "file-loader": "^2.0.0",
+    "image-webpack-loader": "^4.3.1",
+    "mini-css-extract-plugin": "^0.4.3",
+    "optimize-css-assets-webpack-plugin": "^5.0.1",
+    "postcss-loader": "^3.0.0",
+    "postcss-preset-env": "^6.0.8",
+    "sass-loader": "^7.1.0",
+    "source-map-loader": "^0.2.4",
+    "uglifyjs-webpack-plugin": "^2.0.1",
+    "webpack": "^4.17.2",
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.1.9"
+  }
+}
