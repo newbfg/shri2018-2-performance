@@ -1,16 +1,7 @@
 const gulp = require("gulp");
 const sass = require("gulp-sass");
 const concat = require("gulp-concat");
-const htmlmin = require("gulp-htmlmin");
 const uglify = require("gulp-uglify-es").default;
-
-// HTML
-gulp.task("html", () => {
-    return gulp
-        .src("pages/*.html")
-        .pipe(htmlmin({ collapseWhitespace: true }))
-        .pipe(gulp.dest("./"));
-});
 
 // Styles
 gulp.task("styles", function() {
@@ -28,6 +19,6 @@ gulp.task("scripts", function() {
         .pipe(gulp.dest("./"));
 });
 
-const buildTasks = ["html", "styles", "scripts"];
+const buildTasks = ["styles", "scripts"];
 
 gulp.task("build", buildTasks);
