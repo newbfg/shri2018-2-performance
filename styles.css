@@ -137,10 +137,6 @@
   display: inline-block;
   margin-right: 11px;
 }
-#root {
-  position: absolute;
-  left: -10000px;
-}
 .devices {
   display: flex;
   justify-content: flex-start;
@@ -477,6 +473,7 @@ html {
   margin: 0 auto;
   padding: 0;
   width: 1366px;
+  background-color: #fff;
 }
 .page__wrapper {
   display: flex;
