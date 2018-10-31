@@ -1,4 +1,26 @@
-
+a {
+  color: #2c3e50;
+  text-decoration: none;
+}
+img {
+  width: auto\9;
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+}
+/* filter__select-button */
+button {
+  margin: 0;
+  font-family: 'PT Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  font-weight: normal;
+  line-height: 20px;
+  cursor: pointer;
+  -webkit-appearance: button;
+  vertical-align: middle;
+}
 .adjust-bar {
   -webkit-appearance: none;
   appearance: none;
@@ -38,7 +60,8 @@
 .adjust-bar__container_theme_temp {
   position: relative;
 }
-.adjust-bar__container_theme_temp::before, .adjust-bar__container_theme_temp::after {
+.adjust-bar__container_theme_temp::before,
+.adjust-bar__container_theme_temp::after {
   color: #fff;
   font-size: 18px;
   font-weight: 700;
@@ -58,7 +81,8 @@
 .adjust-bar__container_theme_light {
   position: relative;
 }
-.adjust-bar__container_theme_light::before, .adjust-bar__container_theme_light::after {
+.adjust-bar__container_theme_light::before,
+.adjust-bar__container_theme_light::after {
   content: '';
   position: absolute;
   z-index: 1;
@@ -69,17 +93,24 @@
   left: 14px;
   width: 30px;
   height: 30px;
-  background: url("assets/adjust-bar_light_from.svg") center center/contain no-repeat;
+  background: url('assets/adjust-bar_light_from.svg') center center/contain
+    no-repeat;
 }
 .adjust-bar__container_theme_light::after {
   top: 13px;
   right: 13px;
   width: 34px;
   height: 34px;
-  background: url("assets/adjust-bar_light_to.svg") center center/contain no-repeat;
+  background: url('assets/adjust-bar_light_to.svg') center center/contain
+    no-repeat;
 }
 .adjust-bar_theme_temp {
-  background-image: linear-gradient(90deg, #068fff 0%, #ffd800 50%, #f76b1c 100%);
+  background-image: linear-gradient(
+    90deg,
+    #068fff 0%,
+    #ffd800 50%,
+    #f76b1c 100%
+  );
 }
 .adjust-bar_theme_light {
   background-image: linear-gradient(90deg, #ffe682 0%, #ff9e00 100%);
@@ -176,6 +207,17 @@
 }
 .filter__item-radio {
   display: none;
+
+  width: auto;
+  margin: 4px 0 0;
+  margin-top: 1px \9;
+  *margin-top: 0;
+  line-height: normal;
+  cursor: pointer;
+  font-family: 'PT Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  font-weight: normal;
+  vertical-align: middle;
 }
 .filter__item-radio:checked + label {
   background: #ffd93e;
@@ -269,7 +311,7 @@
 }
 .knob__self {
   fill: #fefefe;
-  filter: url("#knob-shadow");
+  filter: url('#knob-shadow');
   cursor: pointer;
 }
 .knob__value {
@@ -285,13 +327,16 @@
   align-items: center;
   height: 80%;
 }
-.link, .link:active, .link:visited {
+.link,
+.link:active,
+.link:visited {
   color: rgba(51, 51, 51, 0.6);
 }
 .link {
   text-decoration: none;
 }
-.link_active, .link:hover {
+.link_active,
+.link:hover {
   color: inherit;
 }
 .logo {
@@ -299,7 +344,7 @@
   width: 108px;
   height: 27px;
   position: relative;
-  background-image: url("./assets/logo.png");
+  background-image: url('./assets/logo.png');
   background-repeat: no-repeat;
   background-position: left top;
   background-size: cover;
@@ -330,10 +375,11 @@
   padding: 0 20px 0 25px;
   display: flex;
   justify-content: space-between;
-  background: url("assets/sh.png") center center/cover no-repeat;
+  background: url('assets/sh.png') center center/cover no-repeat;
 }
 .main__greeting {
   margin-top: 6px;
+  font-family: 'PT Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 27px;
   font-weight: 700;
 }
@@ -341,7 +387,7 @@
   width: 61.585%;
   padding-top: 20px;
   padding-left: 20px;
-  background: rgba(255,255,255,0.6);
+  background: rgba(255, 255, 255, 0.6);
 }
 .main__panel {
   margin-bottom: 14px;
@@ -365,6 +411,7 @@
   margin-top: 25px;
 }
 .menu {
+  display: block;
   margin-left: 52px;
 }
 .menu__icon {
@@ -374,6 +421,7 @@
   margin-right: 27px;
   font-size: 16px;
   font-weight: 700;
+  line-height: 20px;
 }
 .menu__list {
   display: flex;
@@ -419,12 +467,14 @@
   padding-right: 32px;
 }
 .modal__value_temp {
-  background: url("assets/panel__icon_temp_on.svg") calc(100% + 10px) 0%/contain no-repeat;
+  background: url('assets/panel__icon_temp_on.svg') calc(100% + 10px) 0% /
+    contain no-repeat;
 }
 .modal__value_light {
   height: 45px;
   padding-right: 45px;
-  background: url("assets/panel__icon_light_off.svg") right center/contain no-repeat;
+  background: url('assets/panel__icon_light_off.svg') right center/contain
+    no-repeat;
 }
 .modal__status {
   margin-bottom: 20px;
@@ -457,7 +507,9 @@
   from {
     transform: scale(0.2);
   }
-to-transform: scale(1);
+  to {
+    transform: scale(1);
+  }
 }
 * {
   box-sizing: border-box;
@@ -583,13 +635,13 @@ html {
   font-size: 36px;
   font-weight: 700;
   line-height: 1.16;
-  font-family: "PT Sans Narrow", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'PT Sans Narrow', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 .weather__item_outside {
   padding-right: 31px;
 }
 .weather__item_cloud-drizzle {
-  background: url("assets/cloud-drizzle.png") 100% 70%/26px no-repeat;
+  background: url('assets/cloud-drizzle.png') 100% 70%/26px no-repeat;
 }
 .stats {
   opacity: 0;
@@ -599,17 +651,22 @@ html {
   height: 24px;
 }
 .panel__icon_temp_off {
-  background: url("assets/panel__icon_temp_off.svg") center center/contain no-repeat;
+  background: url('assets/panel__icon_temp_off.svg') center center/contain
+    no-repeat;
 }
 .panel__icon_temp_on {
-  background: url("assets/panel__icon_temp_on.svg") center center/contain no-repeat;
+  background: url('assets/panel__icon_temp_on.svg') center center/contain
+    no-repeat;
 }
 .panel__icon_light_off {
-  background: url("assets/panel__icon_light_off.svg") center center/contain no-repeat;
+  background: url('assets/panel__icon_light_off.svg') center center/contain
+    no-repeat;
 }
 .panel__icon_light_on {
-  background: url("assets/panel__icon_light_on.svg") center center/contain no-repeat;
+  background: url('assets/panel__icon_light_on.svg') center center/contain
+    no-repeat;
 }
 .panel__icon_clock {
-  background: url("assets/panel__icon_clock.svg") center center/contain no-repeat;
+  background: url('assets/panel__icon_clock.svg') center center/contain
+    no-repeat;
 }
