@@ -397,6 +397,19 @@
   overflow: auto;
   background: rgba(51, 51, 51, 0.5);
 }
+.modal_open {
+  display: flex;
+}
+@keyframes modal {
+  from {
+    transform: scale(0.2);
+  } to {
+    transform: scale(1);
+  }
+}
+.modal_open .modal__content {
+  animation: modal 0.2s ease forwards;
+}
 .modal__title {
   font-size: 27px;
   font-weight: 700;
