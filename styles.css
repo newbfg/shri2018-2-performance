@@ -301,6 +301,7 @@
   height: 27px;
   position: relative;
   background-image: url("./assets/logo.png");
+  background-image: -webkit-image-set(url('./assets/logo.webp') 1x);
   background-repeat: no-repeat;
   background-position: left top;
   background-size: cover;
